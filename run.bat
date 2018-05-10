@@ -1,0 +1,4 @@
+cd %CD%
+
+gulp watch
+
