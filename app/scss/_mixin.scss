@@ -1,0 +1,57 @@
+
+/*
+@include md {}
+@include sm {}
+@include xs {}
+@include s600 {}
+@include s500 {}
+@include s480 {}
+@include s320 {}
+*/
+
+
+@mixin md() {
+    @media only screen and (max-width: 1220px) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xs() {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin s600() {
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin s500() {
+    @media only screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin s480() {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin s320() {
+    @media only screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+
+
+

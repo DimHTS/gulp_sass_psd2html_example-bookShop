@@ -1,0 +1,94 @@
+.nav{
+    @include sm{
+        position: fixed;
+        top: 0;
+        //height --> указана в script.js
+    }
+    background-color: #ffffff;
+    border-bottom: 1px solid #dedede;
+    position: relative;    
+    z-index: 200;
+    width: 100%;
+    .nav__icon{
+        @include sm{
+            display: block;
+            float: right;
+        }
+        //.btn(.20s);
+        cursor: pointer;
+        display: none;
+        font-size: 30px;
+        margin: 5px 0 3px 0;
+        &:hover{
+            color: #f43e3d;
+        }
+    }
+    ul{      
+        @media only screen and (min-width : 993px) {
+            display: block !important;
+        }  
+        @include sm{
+            float: left; 
+            display: none; 
+            width: 100%; 
+            padding: 0;
+            margin-top: 6px;
+            height: auto;
+            line-height: 18px;
+          // overflow-y: auto;
+        }
+        display: block;
+        text-align: justify;
+        overflow: hidden; 
+        margin: 0;
+        padding: 0;
+        height: 40px;   
+        line-height: 40px;
+        &:after { /* эмуляция дополнительной строки, чтобы сработал justify */
+            content: "1";
+            margin-left: 100%;
+            height: 0px;
+            overflow: hidden;
+            display: inline-block;
+        }   
+        li{
+            @include sm{
+                display: block; 
+                float: none;
+                text-align: left; 
+                margin-left: 0px; 
+                margin-right: 0;
+                border-top: 2px solid #000; 
+            }
+            display: inline;
+            a{
+                @include md{            
+                    font-size: 18px;
+                }
+                @include sm{
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                &:hover{
+                    color: #fff;
+                    background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+                }
+                font-size: 19px;
+                padding: 7px 14px;
+                display: inline-block;
+                color: #5b5b5b;
+                text-decoration: none;
+                font-weight: 400;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

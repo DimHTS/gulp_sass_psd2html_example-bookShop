@@ -1,0 +1,13 @@
+@import "mixin";
+@import "extend";
+@import "var"; 
+@import "general"; /* body, container */
+
+
+@import "index/header";
+@import "index/nav";
+@import "index/section";
+@import "index/middle";
+@import "index/footer";
+@import "index/popup";
+

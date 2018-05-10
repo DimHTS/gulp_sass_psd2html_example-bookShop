@@ -1,0 +1,12 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lg_none {
+    @mixin md {
+        display: block;
+    }
+    display: none;
+}
